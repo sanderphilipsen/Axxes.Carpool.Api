@@ -11,5 +11,11 @@ public static class BelgianLicensePlateNumberValidator
         var result = BelgianLicensePlateRegex.Match(licensePlate);
         return result.Success;
     }
+
+    public static List<string> GetValidBelgianLicensePlateNumbers(List<string> licensePlateNumbers)
+        => licensePlateNumbers
+            .Where(licensePlateNumber => BelgianLicensePlateRegex.Match(licensePlateNumber).Success)
+            .ToList();
+
 }
 

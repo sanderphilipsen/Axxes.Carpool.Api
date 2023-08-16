@@ -26,5 +26,4 @@ public class Event
     public void Register(EventRegistration registration)
         => Registrations.Add(registration);
 
-
 }

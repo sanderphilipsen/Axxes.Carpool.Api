@@ -1,9 +1,11 @@
 ﻿using Axxes.Carpool.Api.Validators;
+using System.ComponentModel;
 
 namespace Axxes.Carpool.UnitTests.ValidatorTests;
 
 public sealed class BelgianLicensePlateNumberValidatorTests
 {
+    [Trait("Category", "Carpool")]
     [Fact]
     public void BelgianLicensePlateNumberValidator_Returns_True_If_Valid_LicensePlateNumber_Is_Given()
     {
@@ -56,6 +58,37 @@ public sealed class BelgianLicensePlateNumberValidatorTests
 
         // Assert
         Assert.False(isValid);
+    }
+
+
+    [Fact]
+    public void GetValidBelgianLicensePlateNumbers_Returns_Valid_Only_The_Valid_LicensePlateNumbers()
+    {
+        // Arrange
+        var validLicensePlates = new List<string>
+        {
+            "1-ABC-123",
+            "1-ABC-123",
+            "123-ABC",
+            "9-UOD-259",
+            "4-UDJ-128"
+        };
+
+        var invalidLicensePlates = new List<string>
+        {
+            "18-ABC-123",
+            "1-ABCD-123",
+            "1234-ABC",
+            "9-UOD-259-",
+        };
+
+        var allLicensePlates = validLicensePlates.Concat(invalidLicensePlates).ToList();
+
+        // Act
+        var result = BelgianLicensePlateNumberValidator.GetValidBelgianLicensePlateNumbers(allLicensePlates);
+
+        // Assert
+        Assert.Equal(validLicensePlates.Count, result.Count);
 
     }
 }
