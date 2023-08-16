@@ -1,5 +1,4 @@
 ﻿using Axxes.Carpool.Api.Exceptions;
-using Axxes.Carpool.Api.Repositories;
 using Axxes.Carpool.Api.Repositories.Abstractions;
 using Axxes.Carpool.Api.Services.Abstractions;
 using Axxes.Carpool.Api.Validators;
@@ -63,9 +62,5 @@ public class EventService : IEventService
 
         var registration = new EventRegistration(person!, registerCommand.CanDrive, registerCommand.OpenToCarpool);
         axxesEvent!.Register(registration);
-
-
-
     }
-
 }

@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axxes.Carpool.Api", "Axxes.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axxes.Carpool.Contracts", "Axxes.Carpool.Contracts\Axxes.Carpool.Contracts.csproj", "{C5371577-EA41-4D9B-82E9-4B9941902DE3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axxes.Carpool.UnitTests", "Axxes.Carpool.Api.UnitTests\Axxes.Carpool.UnitTests.csproj", "{0048664A-E7E4-41DC-AB96-C5B5B3C0A6A4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axxes.Carpool.UnitTests", "Axxes.Carpool.UnitTests\Axxes.Carpool.UnitTests.csproj", "{0048664A-E7E4-41DC-AB96-C5B5B3C0A6A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
