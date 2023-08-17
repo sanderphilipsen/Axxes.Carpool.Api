@@ -32,12 +32,13 @@ public class EventService : IEventService
         _eventRepository.AddEvent(newEvent);
     }
 
+
     public IEnumerable<Event> GetAllEvents()
         => _eventRepository.GetAllEvents();
 
     public void RegisterForEvent(RegisterCommand registerCommand)
     {
-        var person = _personRepository.GetAllPersons().FirstOrDefault(p => p.Name != registerCommand.PersonName);
+        var person = _personRepository.GetAllPersons().FirstOrDefault(p => p.Name == registerCommand.PersonName);
 
         if (person is null)
             throw new PersonNotFoundException($"Person with name {registerCommand.PersonName} not found");
@@ -48,7 +49,7 @@ public class EventService : IEventService
         if (axxesEvent is null)
             throw new EventNotFoundException($"Event with id {registerCommand.EventId} not found");
 
-        else if (axxesEvent.EnDateTime < DateTime.Now)
+        if (axxesEvent.EnDateTime < DateTime.Now)
             throw new PassedEventException("Event is in the passed");
 
         if (registerCommand.CanDrive && registerCommand.OpenToCarpool)

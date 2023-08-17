@@ -15,9 +15,6 @@ public class PersonRepository : IPersonRepository
        new Person("Joris"),
     };
 
-    public PersonRepository()
-    {
-    }
 
     public IEnumerable<Person> GetAllPersons()
         => _persons;

@@ -20,7 +20,4 @@ public class EventRepository : IEventRepository
     public IEnumerable<Event> GetAllUpcomingEvents()
         => Events.Where(e => e.StartDateTime > DateTime.Now);
 
-    public void Register(EventRegistration registration, Guid eventId)
-        => Events.Single(e => e.Id == eventId)
-            .Registrations.Add(registration);
 }
