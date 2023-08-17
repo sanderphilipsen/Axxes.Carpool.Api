@@ -45,6 +45,7 @@ public class EventController : ControllerBase
     [HttpGet]
     public IActionResult GetAllEvents()
     {
-        return Ok(_eventService.GetAllEvents());
+        var res = _eventService.GetAllEvents().Select(x => new { x.Id, x.Name }).ToList();
+        return Ok(res);
     }
 }

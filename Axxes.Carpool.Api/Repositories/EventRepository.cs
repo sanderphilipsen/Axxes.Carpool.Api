@@ -11,6 +11,10 @@ public class EventRepository : IEventRepository
         new Event("Haxx","Internal Axxes conference",DateTime.Now.AddDays(50).AddHours(8),DateTime.Now.AddDays(50).AddHours(23),"Grimbergen"),
     };
 
+    public EventRepository()
+    {
+    }
+
     public void AddEvent(Event axxesEvent)
         => Events.Add(axxesEvent);
 
