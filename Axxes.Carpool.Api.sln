@@ -3,11 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axxes.Carpool.Api", "Axxes.Carpool.Api\Axxes.Carpool.Api.csproj", "{06A74A48-B4F1-4E21-B78C-163C11B33E93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Axxes.Carpool.Api", "Axxes.Carpool.Api\Axxes.Carpool.Api.csproj", "{06A74A48-B4F1-4E21-B78C-163C11B33E93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axxes.Carpool.Contracts", "Axxes.Carpool.Contracts\Axxes.Carpool.Contracts.csproj", "{C5371577-EA41-4D9B-82E9-4B9941902DE3}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axxes.Carpool.UnitTests", "Axxes.Carpool.UnitTests\Axxes.Carpool.UnitTests.csproj", "{0048664A-E7E4-41DC-AB96-C5B5B3C0A6A4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Axxes.Carpool.Contracts", "Axxes.Carpool.Contracts\Axxes.Carpool.Contracts.csproj", "{C5371577-EA41-4D9B-82E9-4B9941902DE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +21,6 @@ Global
 		{C5371577-EA41-4D9B-82E9-4B9941902DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5371577-EA41-4D9B-82E9-4B9941902DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5371577-EA41-4D9B-82E9-4B9941902DE3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0048664A-E7E4-41DC-AB96-C5B5B3C0A6A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0048664A-E7E4-41DC-AB96-C5B5B3C0A6A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0048664A-E7E4-41DC-AB96-C5B5B3C0A6A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0048664A-E7E4-41DC-AB96-C5B5B3C0A6A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
