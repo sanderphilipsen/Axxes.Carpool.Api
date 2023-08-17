@@ -25,7 +25,6 @@ public class EventController : ControllerBase
         catch (Exception e)
         {
             return BadRequest(e);
-
         }
     }
 

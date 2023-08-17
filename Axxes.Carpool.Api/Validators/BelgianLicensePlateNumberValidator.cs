@@ -16,5 +16,4 @@ public static class BelgianLicensePlateNumberValidator
         => licensePlateNumbers
             .Where(licensePlateNumber => BelgianLicensePlateRegex.Match(licensePlateNumber).Success)
             .ToList();
-
 }
