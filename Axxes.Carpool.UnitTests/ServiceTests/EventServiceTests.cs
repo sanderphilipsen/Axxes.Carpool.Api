@@ -100,7 +100,7 @@ public sealed class EventServiceTests
         Assert.Throws<PersonNotFoundException>(() => eventService.RegisterForEvent(registerCommand));
     }
 
-    [Theory]
+    [Fact]
     public void Register_For_Event_Should_Throw_EventNotFoundException_If_Event_Does_Not_Exists()
     {
         // Arrange
