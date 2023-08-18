@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Axxes.Carpool.Api", "Axxes.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Axxes.Carpool.Contracts", "Axxes.Carpool.Contracts\Axxes.Carpool.Contracts.csproj", "{C5371577-EA41-4D9B-82E9-4B9941902DE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Axxes.Carpool.Tests", "Axxes.Carpool.Tests\Axxes.Carpool.Tests.csproj", "{C909F483-697E-42EA-9A44-B06B4D6669C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{C5371577-EA41-4D9B-82E9-4B9941902DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5371577-EA41-4D9B-82E9-4B9941902DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C5371577-EA41-4D9B-82E9-4B9941902DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C909F483-697E-42EA-9A44-B06B4D6669C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C909F483-697E-42EA-9A44-B06B4D6669C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C909F483-697E-42EA-9A44-B06B4D6669C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C909F483-697E-42EA-9A44-B06B4D6669C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

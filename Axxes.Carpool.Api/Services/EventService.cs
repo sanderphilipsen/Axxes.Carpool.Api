@@ -20,13 +20,25 @@ public class EventService : IEventService
 
     public void AddEvent(EventCommand eventCommand)
     {
-    }
+        if (eventCommand.StartDateTime > eventCommand.EnDateTime)
+            throw new EndDateTimeBeforeStartDateTimeException("EndDateTime is before the StartDateTime");
 
+        if (_eventRepository.GetAllEvents().Any(e => e.Name == eventCommand.Name))
+            throw new EventAlreadyExistsException("Event already exists");
+
+
+        var axxesEvent = new Event(eventCommand.Name, eventCommand.Description, eventCommand.StartDateTime,
+                       eventCommand.EnDateTime, eventCommand.Location);
+
+        _eventRepository.AddEvent(axxesEvent);
+
+    }
 
     public IEnumerable<Event> GetAllEvents()
         => _eventRepository.GetAllEvents();
 
     public void RegisterForEvent(RegisterCommand registerCommand)
     {
+
     }
 }
